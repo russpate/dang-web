@@ -1,12 +1,12 @@
    AOS.init();
 
-$(window).scroll(function() {
-  if ($(this).scrollTop()> 100) {
-      $('.logo').css('opacity','.5').fadeOut('slow');
-  } else {
-      $('.logo').css('opacity','1').fadeIn('slow');
-  }
-});
+// $(window).scroll(function() {
+//   if ($(this).scrollTop()> 100) {
+//       $('.logo').css('opacity','.5').fadeOut('slow');
+//   } else {
+//       $('.logo').css('opacity','1').fadeIn('slow');
+//   }
+// });
 
 
 // /* Every time the window is scrolled ... */

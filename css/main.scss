@@ -35,8 +35,28 @@ body {
   width: 100%;
   height: 100vh;
   position: fixed;
+  z-index: 1000;
   a {
-    color:white;
+    color: white;
+    text-decoration: none;
+    transition: .2s all;
+    &:after {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 0;
+      height:2px;
+      background: pink;
+      content: "";
+      transition: all 0.25s ease;
+    }
+  &:hover {
+    color: pink;
+    &:after {
+      height: 2px;
+      width: 100%;
+      }
+    }
   }
   p {
     font-size:.75rem;
