@@ -56,6 +56,9 @@ body {
       background: yellow;
       content: "";
       transition: all 0.2s ease; }
+      @media screen and (max-width: 40em) {
+        .info a:after {
+          width: 100%; } }
     .info a:hover {
       color: yellow; }
       .info a:hover:after {
