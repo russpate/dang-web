@@ -1,96 +1,90 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   font-family: 'Inconsolata', monospace;
 }
-
-body{
-  background:#1F1F35;
-  color:white;
+body {
+  background: #1F1F35;
+  color: white;
 }
-.main{
-  width:100%;
-  height:100vh;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
+.main {
+  width: 100%;
+  height: 100vh;
 }
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 100%;
-  svg{
-    position:fixed;
-    width:200px;
-    height:200px;
-    fill:pink;
+  svg {
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    fill: pink;
   }
 }
-.content{
-  // display:none;
-  width:100%;
-  // display:flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-wrap: wrap;
-  p {
-    // display: none;
-    width: 50%;
-    margin: 0 auto;
-    margin-top:25px;
-    margin-bottom: 25px;
-    line-height: 1.75rem;
-    font-size: 1.25rem;
-  }
+.content {
+  width: 100%;
   .item-wrap {
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
   }
-  svg{
-    fill:white;
-    height:700px;
-    width:700px;
+  svg {
+    fill: white;
+    height: 600px;
+    width: 600px;
   }
 }
-
-.info{
-  width:100%;
+.info {
+  width: 100%;
   height: 100vh;
   position: fixed;
-  p{
-    line-height:1rem;
-    &:nth-child(1){
-      // transform:rotate(-90deg);
-      position:absolute;
-      top:10px;
-      left:10px;
+  a {
+    color:white;
+  }
+  p {
+    font-size:.75rem;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    &:nth-child(1) {
+      position: absolute;
+      top: 10px;
+      left: 10px;
     }
-    &:nth-child(2){
-      position:absolute;
-      bottom:10px;
-      left:10px;
+    &:nth-child(2) {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
     }
-    &:nth-child(3){
-      position:absolute;
-      bottom:10px;
-      right:10px;
+    &:nth-child(3) {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
     }
-    &:nth-child(4){
-      position:absolute;
-      top:10px;
-      right:10px;
+    &:nth-child(4) {
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
   }
-
 }
 
 // functional
+.fade {
+  opacity: 0;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  &-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  &-center {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
 
-.fade{
-  opacity:0;
 }

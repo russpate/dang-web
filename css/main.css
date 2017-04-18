@@ -9,47 +9,34 @@ body {
 
 .main {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  height: 100vh; }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%; }
   .logo svg {
     position: fixed;
-    width: 200px;
-    height: 200px;
+    width: 700px;
+    height: 700px;
     fill: pink; }
 
 .content {
   width: 100%; }
-  .content p {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    line-height: 1.75rem;
-    font-size: 1.25rem; }
   .content .item-wrap {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    width: 100%; }
   .content svg {
     fill: white;
-    height: 700px;
-    width: 700px; }
+    height: 600px;
+    width: 600px; }
 
 .info {
   width: 100%;
   height: 100vh;
   position: fixed; }
+  .info a {
+    color: white; }
   .info p {
+    font-size: .75rem;
+    letter-spacing: 1px;
     line-height: 1rem; }
     .info p:nth-child(1) {
       position: absolute;
@@ -70,3 +57,19 @@ body {
 
 .fade {
   opacity: 0; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .flex-center {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
