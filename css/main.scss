@@ -27,6 +27,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
+    // device size xs
+    @media screen and (max-width: 40em) {
+      width: 400px;
+      height: 400px;
+    }
   }
 }
 .content {
@@ -92,6 +97,10 @@ body {
       position: absolute;
       top: 10px;
       right: 10px;
+    }
+    // device size xs
+    @media screen and (max-width: 40em) {
+      font-size:1rem;
     }
   }
 }
