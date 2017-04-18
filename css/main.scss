@@ -76,6 +76,7 @@ body {
   display: flex;
   &-wrap {
     -ms-flex-wrap: wrap;
+     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   &-center {
@@ -86,5 +87,4 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
   }
-
 }

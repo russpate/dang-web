@@ -65,6 +65,7 @@ body {
   display: flex; }
   .flex-wrap {
     -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap; }
   .flex-center {
     -ms-flex-align: center;
